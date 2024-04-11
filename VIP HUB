@@ -67,33 +67,20 @@ end)
 local Tab = Window:NewTab("ดึงของ")
 local Section = Tab:NewSection("อาหาร")
 Section:NewButton("กล้วย", "อาหาร", function()
-for _, child in workspace.Van.Wheels:GetChildren() do
-    if child.Name == "FL" then
         game:GetService("Workspace").banana.Banana.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-    end
-end
 end)
 Section:NewButton("แอปเปิ้ล", "อาหาร", function()
-for _, child in workspace.Van.Wheels:GetChildren() do
-    if child.Name == "FL" then
         game:GetService("Workspace").Apple.Handle.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-    end
-end
 end)
 Section:NewButton("ขนมปัง", "อาหาร", function()
-for _, child in workspace.Van.Wheels:GetChildren() do
-    if child.Name == "FL" then
         game:GetService("Workspace").Bread.Bread.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-    end
-end
+end)
+Section:NewButton("เบอร์เกอร์", "อาหาร", function()
+		game:GetService("Workspace").Burger.MeshPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end)
 local Section = Tab:NewSection("ปืน")
 Section:NewButton("ปืนพก", "ของ", function()
-for _, child in workspace.Van.Wheels:GetChildren() do
-    if child.Name == "FL" then
         game:GetService("Workspace").Pistol.Handle.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-    end
-end
 end)
 local Tab = Window:NewTab("ตั้งค่า")
 local Section = Tab:NewSection("ปุ่มเปิดปิด UI")
@@ -102,8 +89,8 @@ Section:NewKeybind("ปุ่มเปิดปิด UI", "KeybindInfo", Enum.K
 end)
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Vip Hub X x Hub",
-	Text = "Vip Hub⭐",
+	Title = "VIP HUB X x Hub",
+	Text = "VIP HUB⭐",
 	Duration = 5 ----เวลาที่จะแสดง 
 })
  
