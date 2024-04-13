@@ -2,8 +2,15 @@ local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 local Window = Library.CreateLib("VIP HUB", "DarkTheme")
 
 local Tab = Window:NewTab("หน้าแรก")
-local Section = Tab:NewSection("สคริปต์ต่างๆ")
+local Section = Tab:NewSection("หน้าแรก")
 
+Section:NewToggle("วิ่งไว", "ควย", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 30
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 10
+    end
+end)
 Section:NewButton("ถือของไม่ตก", "บิด", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/KbSCJFhZ"))();
 end)
