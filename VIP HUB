@@ -112,3 +112,5 @@ end)
 tool.Parent = game.Players.LocalPlayer.Backpack
 wait(0.2)
      
+local fre = game.Players.LocalPlayer.Backpack:FindFirstChild("T")
+fre.Name = "UI"
