@@ -57,6 +57,12 @@ Section:NewButton("บล็อกเขียว(มีโอกาน้ำม
 game.Players.LocalPlayer.Character.	HumanoidRootPart.CFrame = CFrame.new(1376.30432, 12.0085745, 7810.5332, -0.866243184, 3.61264085e-08, -0.499622583, 2.28588757e-08, 1, 3.26747873e-08, 0.499622583, 1.68835026e-08, -0.866243184
 )
 end)
+Section:NewButton("รถเก๋ง", "ควย", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Sedan.Body.Model.paint.CFrame
+end)
+Section:NewButton("รถตู้", "ควย", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Van.Body.Model.Part.CFrame
+end)
 local Section = Tab:NewSection("ผู้เล่น")
 
 players = {}
