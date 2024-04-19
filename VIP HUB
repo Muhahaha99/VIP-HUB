@@ -110,13 +110,6 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 	Text = "VIP HUB⭐",
 	Duration = 5 ----เวลาที่จะแสดง 
 })
-
-do
-local ui = game.Players.LocalPlayer.Backpack:FindFirstChild("UI")
-if ui then
-ui:Destroy()
-end
-end
  
 local VIP = Instance.new("ScreenGui")
 local KK = Instance.new("TextButton")
