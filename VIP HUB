@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/TnBz9vvr"))()
 local Window = Library.CreateLib("VIP HUB", "DarkTheme")
 
 local Tab = Window:NewTab("หน้าแรก")
@@ -80,10 +80,14 @@ end)
 local Tab = Window:NewTab("ดึงของ")
 local Section = Tab:NewSection("อาหาร")
 Section:NewButton("กล้วย", "อาหาร", function()
-        game:GetService("Workspace").banana.Banana.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+for i,v in pairs(game:GetService("Workspace").banana:GetChildren()) do
+v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end
 end)
 Section:NewButton("แอปเปิ้ล", "อาหาร", function()
-        game:GetService("Workspace").Apple.Handle.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+for i,v in pairs(game:GetService("Workspace").Apple:GetChildren()) do
+v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end
 end)
 Section:NewButton("ขนมปัง", "อาหาร", function()
         game:GetService("Workspace").Bread.Bread.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
@@ -106,17 +110,36 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 	Text = "VIP HUB⭐",
 	Duration = 5 ----เวลาที่จะแสดง 
 })
+
+do
+local ui = game.Players.LocalPlayer.Backpack:FindFirstChild("UI")
+if ui then
+ui:Destroy()
+end
+end
  
-getgenv().keytoclick = "T"
-tool = Instance.new("Tool")
-tool.RequiresHandle = false
-tool.Name = keytoclick
-tool.Activated:connect(function()
-    local vim = game:service("VirtualInputManager")
-vim:SendKeyEvent(true, keytoclick, false, game)
+local VIP = Instance.new("ScreenGui")
+local KK = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+
+
+VIP.Name = "VIP"
+VIP.Parent = game.CoreGui
+VIP.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+
+KK.Name = "KK"
+KK.Parent = VIP
+KK.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KK.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KK.BorderSizePixel = 0
+KK.Position = UDim2.new(0.0857338831, 0, 0.0989974961, 0)
+KK.Size = UDim2.new(0, 50, 0, 50)
+KK.Font = Enum.Font.SourceSans
+KK.Text = "UI"
+KK.TextColor3 = Color3.fromRGB(0, 0, 0)
+KK.TextSize = 14.000
+KK.MouseButton1Click:Connect(function()
+game.CoreGui:FindFirstChild("1").Enabled = not game.CoreGui:FindFirstChild("1").Enabled
 end)
-tool.Parent = game.Players.LocalPlayer.Backpack
-wait(0.2)
-     
-local fre = game.Players.LocalPlayer.Backpack:FindFirstChild("T")
-fre.Name = "UI"
+UICorner.Parent = KK
