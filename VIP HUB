@@ -83,9 +83,7 @@ Section:NewButton("กล้วย", "อาหาร", function()
 game:GetService("Workspace").banana.Banana.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end)
 Section:NewButton("แอปเปิ้ล", "อาหาร", function()
-for i,v in pairs(game:GetService("Workspace").Apple:GetChildren()) do
-v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-end
+game:GetService("Workspace").Apple.Handle.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end)
 Section:NewButton("ขนมปัง", "อาหาร", function()
         game:GetService("Workspace").Bread.Bread.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
