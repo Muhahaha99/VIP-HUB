@@ -30,9 +30,6 @@ end)
 local Tab = Window:NewTab("วาป")
 local Section = Tab:NewSection("วาป")
 
-Section:NewButton("ที่เก็บของ OP", "บิด", function()
-    game.Players.LocalPlayer.Character.	HumanoidRootPart.CFrame = CFrame.new(-2216.3252, -475.190186, 7319.62012, -0.00963203795, -2.55909005e-09, 0.999953628, -1.53856661e-08, 1, 2.41100673e-09, -0.999953628, -1.53617297e-08, -0.00963203795)
-end)
 Section:NewButton("จุดเกิด", "บิด", function()
      game.Players.LocalPlayer.Character.	HumanoidRootPart.CFrame = CFrame.new(204.358734, 7.66272163, 7850.29395, -0.998853147, 2.15213514e-09, 0.0478786863, -9.74848202e-10, 1, -6.52871961e-08, -0.0478786863, -6.52590018e-08, -0.998853147)
 end)
@@ -44,10 +41,6 @@ game.Players.LocalPlayer.Character.	HumanoidRootPart.CFrame = CFrame.new(168.156
 end)
 Section:NewButton("หลังบ้าน", "บิด", function()
 game.Players.LocalPlayer.Character.	HumanoidRootPart.CFrame = CFrame.new(220.32341, 7.99999857, 7849.18359, -0.0463867038, -2.83768453e-09, -0.99892354, -1.16650538e-08, 1, -2.29905606e-09, 0.99892354, 1.15458514e-08, -0.0463867038)
-end)
-Section:NewButton("แหล่งน้ำมัน", "ควย", function()
-game.Players.LocalPlayer.Character.	HumanoidRootPart.CFrame = CFrame.new(3210.60571, 20.5136871, 7748.59424, 0.999644279, 1.08370173e-07, -0.0266708657, -1.08382025e-07, 1, 1.00138087e-09, 0.0266708657, 1.88961757e-09, 0.999644279
-)
 end)
 Section:NewButton("บล็อกแดง(มีโอกาสปืนดรอบ)", "ปืน", function()
 game.Players.LocalPlayer.Character.	HumanoidRootPart.CFrame = CFrame.new(1839.36902, 10.0085554, 7911.33398, 0.360608667, 3.9829839e-08, 0.932717204, 8.09465703e-08, 1, -7.39987129e-08, -0.932717204, 1.02184835e-07, 0.360608667
