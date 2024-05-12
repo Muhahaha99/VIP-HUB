@@ -4,6 +4,13 @@ local Window = Library.CreateLib("VIP HUB", "DarkTheme")
 local Tab = Window:NewTab("หน้าแรก")
 local Section = Tab:NewSection("หน้าแรก")
 
+Section:NewButton("ฆ่า mutant", "บิด", function()
+local hee = game:GetService("Workspace").mutant.Head
+hee:Destroy()
+wait(0.2)
+local mu = game:GetService("Workspace").mutant
+mu:Destroy()
+end)
 Section:NewToggle("วิ่งไว", "ควย", function(state)
     if state then
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 30
