@@ -7,7 +7,7 @@ local Section = Tab:NewSection("หน้าแรก")
 Section:NewButton("ฆ่า mutant", "บิด", function()
 local hee = game:GetService("Workspace").mutant.Head
 hee:Destroy()
-wait(0.2)
+wait(0.5)
 local mu = game:GetService("Workspace").mutant
 mu:Destroy()
 end)
