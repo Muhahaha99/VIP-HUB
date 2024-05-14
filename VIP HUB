@@ -80,18 +80,21 @@ end)
 local Tab = Window:NewTab("ดึงของ")
 local Section = Tab:NewSection("อาหาร")
 Section:NewButton("กล้วย", "อาหาร", function()
-game:GetService("Workspace").banana.Banana.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+local bn = game:GetService("Workspace").banana:FindFirstChild("Banana")
+bn.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end)
 Section:NewButton("แอปเปิ้ล", "อาหาร", function()
-game:GetService("Workspace").Apple.Handle.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+local mm =game:GetService("Workspace").Apple:FindFirstChild("Handle")
+mm.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end)
 Section:NewButton("ขนมปัง", "อาหาร", function()
-        game:GetService("Workspace").Bread.Bread.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+local ju = game:GetService("Workspace").Bread:FindFirstChild("Bread")
+ju.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end)
 Section:NewButton("เบอร์เกอร์", "อาหาร", function()
-		game:GetService("Workspace").Burger.MeshPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-end)
-local Section = Tab:NewSection("ปืน")
+local lop = game:GetService("Workspace").Burger:FindFirstChild("MeshPart")
+lop.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end)local Section = Tab:NewSection("ปืน")
 Section:NewButton("ปืนพก", "ของ", function()
         game:GetService("Workspace").Pistol.Handle.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end)
