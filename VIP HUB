@@ -1,5 +1,5 @@
 do
-local emo = game.CoreGui.VIP
+local emo = game.CoreGui:FindFirstChild("VIP")
 if emo then
 emo:Destroy()
 end
