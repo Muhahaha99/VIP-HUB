@@ -8,7 +8,7 @@ Section:NewButton("ฆ่า mutant", "บิด", function()
 local hee = game:GetService("Workspace").mutant.Head
 hee:Destroy()
 local dze = game:GetService("Workspace").mutant
-dze.Name = "i"
+dze:Destroy()
 end)
 Section:NewToggle("วิ่งไว", "ควย", function(state)
     if state then
