@@ -34,6 +34,9 @@ end)
 Section:NewButton("บิน", "V3", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
 end)
+Section:NewButton("Dex", "dex", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/jT9KuSm3"))();
+end)
 local Tab = Window:NewTab("วาป")
 local Section = Tab:NewSection("วาป")
 
