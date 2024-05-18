@@ -5,11 +5,9 @@ local Tab = Window:NewTab("หน้าแรก")
 local Section = Tab:NewSection("หน้าแรก")
 
 Section:NewButton("ฆ่า mutant", "บิด", function()
-local hee = game:GetService("Workspace").mutant.Head
-hee:Destroy()
-wait(0.7)
-local dze = game:GetService("Workspace").mutant
-dze:Destroy()
+local fov = game:GetService("Workspace").mutant
+game:GetService("Workspace").mutant.Humanoid.Health = 0
+fov.Name = "mutant!"
 end)
 Section:NewToggle("วิ่งไว", "ควย", function(state)
     if state then
