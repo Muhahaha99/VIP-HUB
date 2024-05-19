@@ -9,6 +9,16 @@ local fov = game:GetService("Workspace").mutant
 game:GetService("Workspace").mutant.Humanoid.Health = 0
 fov.Name = "mutant!"
 end)
+Section:NewButton("ฆ่า mutant(แมพหญ้า)", "บิด", function()
+local foh = game:GetService("Workspace").BuildingItemStorage.Mutant
+game:GetService("Workspace").BuildingItemStorage.Mutant.Humanoid.Health = 0
+foh.Name = "mutant"
+end)
+Section:NewButton("ฆ่า buff", "บิด", function()
+local fok = game:GetService("Workspace").BuildingItemStorage.Buff
+game:GetService("Workspace").BuildingItemStorage.Buff.Humanoid.Health = 0
+fok.Name = "mutant"
+end)
 Section:NewToggle("วิ่งไว", "ควย", function(state)
     if state then
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 30
